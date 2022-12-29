@@ -49,7 +49,7 @@ export default function PDFLoader(props: any) {
         setScaleV(s);
         const x = memo[0] - ms * memo[2];
         const y = memo[1] - ms * memo[3];
-        api.start({ scale: s * 1.2, a });
+        api.start({ scale: s * 1.2, x: a * 1 });
         console.log('scrolled', ref.current.offsetTop);
         ref.current.scrollTop = 10;
         return memo;
